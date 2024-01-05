@@ -1756,3 +1756,11 @@ div.desc {
           box-shadow: 0 0 0 50px rgba(98, 243, 88, 0);
       }
   }
+  .form .title {
+    margin-bottom: 60px;
+  }
+  .form .row:nth-child(even) {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: #ccc thin solid;
+  }
