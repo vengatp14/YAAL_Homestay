@@ -42,11 +42,14 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+        <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
         <li><a class="nav-link scrollto" href="./About.html">About</a></li>
         <li><a class="nav-link scrollto" href="./Services.html">Services</a></li>
         <li><a href="./offer_room.html">Offers</a></li>
+        <li><a class="nav-link scrollto" href="./Gallery.html">Gallery</a></li>
         <li><a href="./rooms.html">Rooms</a></li>
+        
+        <li><a href="portfolio-details.html" class="active pulseBtn" style="padding: 4px 8px;">Subscription</a></li>
         <li><a class="getstarted scrollto" href="./Contact_us.html">Contact</a></li>
 
         
@@ -86,15 +89,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="./assets/img/earn/1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                  <img src="./assets/img/earn/2.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                  <img src="./assets/img/earn/4.png" alt="">
                 </div>
 
               </div>
@@ -103,17 +106,31 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
+            <div class="portfolio-info pb-5_cos">
+              <h3>Invest and earn 40% of your money</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Iversting on rooms</li>
+                <li><strong>Minmum Inversting </strong>: 1000/- INR</li>
+                <li><strong>Project Validate</strong>: Life Time</li>
+                <li ><strong>Contact us </strong>: <a href="tel:+919095535353" class="btn-sm btn-success bg-col p-2 rounded">Call Now &nbsp; <i class="bi bi-telephone-forward-fill"></i></a></li>
+                <li><strong>Copy Offer Page URL and Share Your referral</strong>: 
+                  <div class="container_copy mt-4">
+                    <!-- <div class="label">
+                      E-mail address
+                    </div> -->
+                    <div class="copy-text">
+                      <input type="text" class="text" value="https://yaalhomestay.in/offer_room" />
+                      <button>
+                        <!-- <i class="fa fa-clone"></i> -->
+                        <i class="bi bi-copy"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Terms & Condition</h2>
               <p>
                 Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
               </p>
@@ -199,7 +216,20 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script>
+  let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function () {
+	let input = copyText.querySelector("input.text");
+	input.select();
+	document.execCommand("copy");
+	copyText.classList.add("active");
+	window.getSelection().removeAllRanges();
+	setTimeout(function () {
+		copyText.classList.remove("active");
+	}, 2500);
+});
 
+</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
