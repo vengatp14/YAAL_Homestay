@@ -1679,6 +1679,7 @@ div.desc {
 	color: #555;
 	border: none;
 	outline: none;
+  width: 150px;
 }
 .copy-text button {
 	padding: 10px;
