@@ -1789,3 +1789,41 @@ div.desc {
     .card-content a:hover {
       background-color: #0056b3;
     }
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.gallery-card:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+}
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.4s ease;
+}
+.gallery-card:hover img {
+  filter: brightness(80%);
+}
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
