@@ -6,110 +6,102 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<!-- <?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> -->
+
 <url>
-  <loc>http://yaalhomestay.in/</loc>
+  <loc>https://yaalhomestay.in/</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/about</loc>
+  <loc>https://yaalhomestay.in/about</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/services</loc>
+  <loc>https://yaalhomestay.in/services</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/offer_room</loc>
+  <loc>https://yaalhomestay.in/offer_room</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/10 Must-Visit Places in Kodaikanal.html</loc>
+  <loc>https://yaalhomestay.in/10%20must-visit%20places%20in%20kodaikanal</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/Hidden Falls of Kodaikanal.html</loc>
+  <loc>https://yaalhomestay.in/hidden%20falls%20of%20kodaikanal</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/trekking places in kodaikanal.html</loc>
+  <loc>https://yaalhomestay.in/trekking%20places%20in%20kodaikanal.html</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/Museums At Kodaikanal.html</loc>
+  <loc>https://yaalhomestay.in/museums%20at%20kodaikanal</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/kodaikanal_old_photos</loc>
+  <loc>https://yaalhomestay.in/kodaikanal_old_photos</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/villages_around_kodaikanal</loc>
+  <loc>https://yaalhomestay.in/villages_around_kodaikanal</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/kodaikanal_bus_timings</loc>
+  <loc>https://yaalhomestay.in/kodaikanal_bus_timings</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/bus_to_kodaikanal_timings</loc>
+  <loc>https://yaalhomestay.in/bus_to_kodaikanal_timings</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/hospitals_at_kodaikanal</loc>
+  <loc>https://yaalhomestay.in/hospitals_at_kodaikanal</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/Kodaikanal Natural Herbal.html</loc>
+  <loc>https://yaalhomestay.in/kodaikanal%20natural%20herbal</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/kodaikanal_festivals&celebrations</loc>
+  <loc>https://yaalhomestay.in/kodaikanal_festivals&amp;celebrations</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/gallery</loc>
+  <loc>https://yaalhomestay.in/gallery</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/rooms</loc>
+  <loc>https://yaalhomestay.in/rooms</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/portfolio-details</loc>
+  <loc>https://yaalhomestay.in/portfolio-details</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://yaalhomestay.in/contact_us</loc>
+  <loc>https://yaalhomestay.in/contact_us</loc>
+  <lastmod>2025-09-01T21:46:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-<url>
-  <loc></loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG_20231012_093723~2.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG_20231012_093907~2.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG_20231012_093757~2.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106125655.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106125625.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106125642.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106123329.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106124455.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106124249.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106123548.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG20240106123906.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/WhatsApp Image 2024-01-08 at 16.13.54_4a2a0abd.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/./assets/img/Rooms_pic/IMG_20231012_091957~2.jpg</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/tel:+919095535353</loc>
-</url>
-<url>
-  <loc>http://yaalhomestay.in/tel:+918526371719</loc>
-</url>
+
+
+</urlset>
