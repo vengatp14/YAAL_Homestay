@@ -26,6 +26,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -56,13 +59,16 @@
           <li><a title="Kodaikanal literary retreat"  class="nav-link scrollto" href="./About.html">About</a></li>
           <li><a title="Kodaikanal literary homestay"  class="nav-link scrollto" href="./Services.html">Services</a></li>
           <li><a title="Kodaikanal literary cottage"  href="./offer_room.html">Offers</a></li>
+
+                               <li><a title="Kodaikanal adventure stay" class="nav-link scrollto" href="blog.html">Blog</a></li>
+
           <!--   <li class="dropdown"><a href="#"><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="10 Must-Visit Places in Kodaikanal.html">10 Must-Visit Places in Kodaikanal</a></li>
               <li><a href="Hidden Falls of Kodaikanal.html">Hidden Falls of Kodaikanal</a></li>
             </ul>
           </li> -->
-          <li class="dropdown"><a href="#"><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="10 Must-Visit Places in Kodaikanal.html">10 Must-Visit Places in Kodaikanal</a></li>
               <li><a href="Hidden Falls of Kodaikanal.html">Hidden Falls of Kodaikanal</a></li>
@@ -76,7 +82,7 @@
                <li><a href="Kodaikanal Natural Herbal.html">Kodaikanal Natural Herbal</a></li>
               <li><a href="Kodaikanal_Festivals&Celebrations.html">Kodaikanal Festivals & Celebrations</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a title="Kodaikanal literary villa"  class="nav-link scrollto" href="./Gallery.html">Gallery</a></li>
           <li><a title="Kodaikanal literary stay"  href="./rooms.html">Rooms</a></li>
           <li><a title="Kodaikanal literary resort"  href="portfolio-details.html" class=" pulseBtn" style="padding: 4px 8px;">Subscription</a></li>
@@ -114,7 +120,7 @@
         <section id="contact" class="contact">
           <div class="container">
 
-            <div class="section-title">
+            <div class="section-title" >
               <h2>Contact</h2>
               <p>Reach out for seamless room bookings! Our responsive team is ready to assist. Contact us for inquiries
                 or support. Your comfort is our priority. Book with confidence today!</p>
@@ -122,7 +128,7 @@
 
             <div class="row contact-info">
 
-              <div class="col-md-3">
+              <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                 <div class="contact-address">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
@@ -132,7 +138,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <div class="contact-phone">
                   <i class="bi bi-phone"></i>
                   <h3>Phone Number</h3>
@@ -144,7 +150,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="contact-email">
                   <i class="bi bi-envelope"></i>
                   <h3>Email</h3>
@@ -152,7 +158,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <div class="contact-phone">
                   <i class="bi bi-whatsapp"></i>
                   <h3>What's app</h3>
@@ -255,6 +261,37 @@
     </div>
   </footer><!-- End Footer -->
 
+  <!-- ===== Mobile & Tablet Footer Navbar ===== -->
+  <nav class="mobile-footer-nav d-lg-none">
+    <a href="index.html" >
+      <i class="bi bi-house"></i><span>Home</span>
+    </a>
+    <a href="About.html">
+      <i class="bi bi-info-circle"></i><span>About</span>
+    </a>
+    <a href="Services.html">
+      <i class="bi bi-gear"></i><span>Services</span>
+    </a>
+    <a href="blog.html">
+      <i class="bi bi-journal-text"></i><span>Blog</span>
+    </a>
+    <a href="Contact_us.html" class="active">
+      <i class="bi bi-envelope"></i><span>Contact</span>
+    </a>
+  </nav>
+
+  <div class="sticky-buttons">
+  <!-- Call Button -->
+  <a href="tel:+919095535353" class="btn-circle call" title="Call Us">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919095535353" class="btn-circle" title="Chat on WhatsApp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
   <a title="Kodaikanal forest stay"  href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
@@ -268,6 +305,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 

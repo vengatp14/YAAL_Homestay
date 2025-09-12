@@ -26,6 +26,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -56,7 +58,9 @@
           <li><a title="Kodaikanal luxury stay"  class="nav-link scrollto" href="./About.html">About</a></li>
           <li><a title="Kodaikanal luxury resort"  class="nav-link scrollto" href="./Services.html">Services</a></li>
           <li><a title="Kodaikanal luxury holiday"  href="./offer_room.html">Offers</a></li>
-            <li class="dropdown"><a href="#"><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                               <li><a title="Kodaikanal adventure stay" class="nav-link scrollto" href="blog.html">Blog</a></li>
+
+            <!-- <li class="dropdown"><a href="#"><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="10 Must-Visit Places in Kodaikanal.html">10 Must-Visit Places in Kodaikanal</a></li>
               <li><a href="Hidden Falls of Kodaikanal.html">Hidden Falls of Kodaikanal</a></li>
@@ -70,7 +74,7 @@
                <li><a href="Kodaikanal Natural Herbal.html">Kodaikanal Natural Herbal</a></li>
               <li><a href="Kodaikanal_Festivals&Celebrations.html">Kodaikanal Festivals & Celebrations</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a title="Kodaikanal eco homestay"  class="nav-link scrollto" href="./Gallery.html">Gallery</a></li>
           <li><a title="Kodaikanal eco cottages"  href="./rooms.html" class="active">Rooms</a></li>
           <li><a title="Kodaikanal eco retreat"  href="portfolio-details.html" class=" pulseBtn" style="padding: 4px 8px;">Subscription</a></li>
@@ -104,11 +108,11 @@
 
     <section class="inner-page">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="./assets/img/slide/1.png" class="img-fluid" alt="Kodaikanal weather">
+        <div class="row" >
+          <div class="col-lg-6 ">
+            <img src="./assets/img/slide/1.png" class="img-fluid room-img" alt="Kodaikanal weather">
           </div>
-          <div class="col-lg-6 my-auto">
+          <div class="col-lg-6 my-auto" >
             <div class="icon-box">
               <div class="icon"></div>
               <h4 class="title"><a title="Kodaikanal nature retreat"  href="">deluxe Rooms</a></h4>
@@ -131,7 +135,7 @@
           </div>
 
 
-          <div class="col-lg-6 pt-5 my-auto">
+          <div class="col-lg-6 pt-5 my-auto" >
             <div class="icon-box">
               <div class="icon"></div>
               <h4 class="title"><a title="Kodaikanal nature cottage"  href="">Cottage</a></h4>
@@ -152,7 +156,7 @@
             </div>
           </div>
           <div class="col-lg-6 pt-5">
-            <img src="./assets/img/slide/2.png" class="img-fluid" alt="Kodaikanal travel guide">
+            <img src="./assets/img/slide/2.png" class="img-fluid room-img" alt="Kodaikanal travel guide">
           </div>
 
 
@@ -235,6 +239,37 @@
     </div>
   </footer><!-- End Footer -->
 
+  <!-- ===== Mobile & Tablet Footer Navbar ===== -->
+  <nav class="mobile-footer-nav d-lg-none">
+    <a href="index.html" class="active">
+      <i class="bi bi-house"></i><span>Home</span>
+    </a>
+    <a href="About.html">
+      <i class="bi bi-info-circle"></i><span>About</span>
+    </a>
+    <a href="Services.html">
+      <i class="bi bi-gear"></i><span>Services</span>
+    </a>
+    <a href="blog.html">
+      <i class="bi bi-journal-text"></i><span>Blog</span>
+    </a>
+    <a href="Contact_us.html">
+      <i class="bi bi-envelope"></i><span>Contact</span>
+    </a>
+  </nav>
+
+    <div class="sticky-buttons">
+  <!-- Call Button -->
+  <a href="tel:+919095535353" class="btn-circle call" title="Call Us">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919095535353" class="btn-circle" title="Chat on WhatsApp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
   <a title="Kodaikanal forest stay"  href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
@@ -248,6 +283,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </body>
 
