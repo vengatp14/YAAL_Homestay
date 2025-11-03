@@ -616,7 +616,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/pexels-kaichieh-chan-917510.jpg") center center no-repeat;
+  background: url("../img/abut\ img.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
   border-radius: 15px;
@@ -726,6 +726,8 @@ box-shadow: 0px 4px 12px rgb(188, 188, 188);
 box-shadow: 0 20px 60px rgba(0,0,0,0.22);
 border-radius: 20px;
 padding: 20px;
+background-color: #5c9f24;
+color: #fff;
 
 
 }
@@ -2006,3 +2008,214 @@ div.desc {
   background-color: #146c43; /* a slightly darker hover color (optional) */
   border-color: #146c43;
 }
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li a {
+  display: block;
+  padding: 12px 15px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  color:#ffffff ;
+  font-weight: 600;
+  background: #198754;
+  transition: 0.3s ease;
+}
+
+.footer-links li a:hover {
+  border-color: #198754;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 992px) {
+  .footer-links {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .footer-links li a {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.section-heading {
+  display: inline-block;
+  background: #198754; /* Light grey or choose your theme color */
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgb(164, 164, 164)
+}
+
+.Tourist{
+   background: #198754; /* Light grey or choose your theme color */
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgb(164, 164, 164)
+}
+
+/* banner */
+
+.carousel-item img { height: 200px; object-fit: cover; }
+/* Desktop (Keep your current design) */
+.banner-section {
+  position: relative;
+  overflow: hidden;
+  height: 700px; /* Desktop height */
+  background: #5c9f24;
+}
+
+/* ✅ Mobile Fix */
+@media (max-width: 768px) {
+  .banner-section {
+    height: auto; /* Auto adjust to image size */
+    padding-bottom: 10px; /* optional spacing */
+  }
+}
+
+
+.scroll-row {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-content {
+  display: flex;
+  width: max-content; /* allow full width for all images */
+  animation: scroll-left 40s linear infinite;
+}
+
+.scroll-content img {
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* move half, because content is duplicated */
+}
+
+/* Reverse direction */
+.scroll-row.reverse .scroll-content {
+  animation: scroll-right 40s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+/* ✅ Desktop style (keep as you have it) */
+.scroll-content img {
+  width: 33.33vw; 
+  height: 700px;
+  object-fit: cover;
+  border: #5c9f24 solid 5px;
+}
+
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .scroll-content img {
+    width: 90vw;  /* Show 1 big image at a time for clarity */
+    height: 250px; /* Reduce height so it's not cropped */
+    object-fit: cover;
+    border-width: 3px; /* Slightly thinner border for mobile look */
+  }
+}
+
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.banner-overlay {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.banner-text-rotator {
+  position: relative;
+  min-height: 80px; /* Ensures space to show text */
+  display: flex;
+  align-items: center;
+}
+
+.banner-text-rotator h1 {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+  font-size: 1.5rem; /* Adjust if needed */
+  line-height: 1.4;
+  animation: fadeText 12s infinite;
+}
+
+/* Animation timing */
+.banner-text-rotator h1:nth-child(1) { animation-delay: 0s; }
+.banner-text-rotator h1:nth-child(2) { animation-delay: 4s; }
+.banner-text-rotator h1:nth-child(3) { animation-delay: 8s; }
+
+@keyframes fadeText {
+  0%, 100% { opacity: 0; transform: translateY(10px); }
+  5%, 30% { opacity: 1; transform: translateY(0); }
+  35% { opacity: 0; transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  .banner-text-rotator h1 {
+    font-size: 1.2rem; /* Smaller text on mobile */
+  }
+}
+@media (max-width: 768px) {
+  #bookNowBtn {
+  margin-top: 45px;
+  }
+}
+
+
+.booking-form-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+.booking-form-card .input-group-text {
+  background: #f8f9fa;
+}
+.booking-form-card h3 {
+  font-weight: 600;
+}
+
+

@@ -204,3 +204,23 @@
   new PureCounter();
 
 })()
+
+// form
+
+ document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent page reload
+
+    const name = document.getElementById("name").value;
+    const checkin = document.getElementById("checkin").value;
+    const checkout = document.getElementById("checkout").value;
+    const rooms = document.getElementById("rooms").value;
+    const people = document.getElementById("people").value;
+    const stayType = document.querySelector('input[name="stayType"]:checked')?.value || "";
+
+    const message = `*Room Booking Request*\n\n👤 Name: ${name}\n🏨 Stay Type: ${stayType}\n🗓️ Check-in: ${checkin}\n📅 Check-out: ${checkout}\n🚪 Rooms: ${rooms}\n👥 People: ${people}`;
+
+    const whatsappNumber = "919095535353"; // your WhatsApp number
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank"); // opens WhatsApp chat
+  });
