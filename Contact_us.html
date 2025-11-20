@@ -190,90 +190,108 @@
 
                 <form id="bookingForm">
                   <div class="row">
+
+                    <!-- Name -->
                     <div class="col-md-6 mb-3">
                       <label class="form-label fw-semibold">Your Name</label>
                       <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name">
                       </div>
+                      <small id="nameError" class="text-danger d-none">Please fill this field</small>
                     </div>
 
+                    <!-- Check-in -->
                     <div class="col-md-6 mb-3">
                       <label class="form-label fw-semibold">Check-in Date</label>
                       <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-calendar-date"></i></span>
-                        <input type="date" id="checkin" class="form-control" required>
+                        <input type="date" id="checkin" class="form-control">
                       </div>
+                      <small id="checkinError" class="text-danger d-none">Please fill this field</small>
                     </div>
 
+                    <!-- Check-out -->
                     <div class="col-md-6 mb-3">
                       <label class="form-label fw-semibold">Check-out Date</label>
                       <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-calendar-check"></i></span>
-                        <input type="date" id="checkout" class="form-control" required>
+                        <input type="date" id="checkout" class="form-control">
                       </div>
+                      <small id="checkoutError" class="text-danger d-none">Please fill this field</small>
                     </div>
 
+                    <!-- Rooms -->
                     <div class="col-md-6 mb-3">
                       <label class="form-label fw-semibold">Number of Rooms</label>
                       <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-door-closed"></i></span>
-                        <input type="number" id="rooms" class="form-control" placeholder="Number of Rooms" min="1"
-                          required>
+                        <input type="number" id="rooms" class="form-control" placeholder="Number of Rooms" min="1">
                       </div>
+                      <small id="roomsError" class="text-danger d-none">Please fill this field</small>
                     </div>
 
+                    <!-- Adults & Kids -->
                     <div class="col-md-6 mb-3">
                       <label class="form-label fw-semibold">Number of People</label>
+
                       <div class="row g-2">
                         <!-- Adults -->
                         <div class="col-6">
                           <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                            <input type="number" id="adults" name="adults" class="form-control" placeholder="Adults"
-                              min="1" required>
+                            <input type="number" id="adults" class="form-control" placeholder="Adults" min="1">
                           </div>
+                          <small id="adultsError" class="text-danger d-none">Please enter adults count</small>
                         </div>
+
                         <!-- Kids -->
                         <div class="col-6">
                           <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-emoji-smile"></i></span>
-                            <input type="number" id="kids" name="kids" class="form-control" placeholder="Kids" min="0">
+                            <input type="number" id="kids" class="form-control" placeholder="Kids" min="0">
                           </div>
+                          <small id="kidsError" class="text-danger d-none">Please enter kids count for family stay</small>
+
                         </div>
                       </div>
                     </div>
 
-
+                    <!-- Stay Type -->
                     <div class="col-md-12 mb-3">
                       <label class="d-block mb-2 fw-bold">Type of Stay:</label>
+
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="stayType" id="family" value="Family"
-                          required>
-                        <label class="form-check-label" for="family">Family</label>
+                        <input class="form-check-input" type="checkbox" name="stayType" value="Family">
+                        <label class="form-check-label">Family</label>
                       </div>
+
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="stayType" id="couple" value="Couple">
-                        <label class="form-check-label" for="couple">Couple</label>
+                        <input class="form-check-input" type="checkbox" name="stayType" value="Couple">
+                        <label class="form-check-label">Couple</label>
                       </div>
+
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="stayType" id="gents" value="Gents">
-                        <label class="form-check-label" for="gents">Gents</label>
+                        <input class="form-check-input" type="checkbox" name="stayType" value="Gents">
+                        <label class="form-check-label">Gents</label>
                       </div>
+
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="stayType" id="ladies" value="Ladies">
-                        <label class="form-check-label" for="ladies">Ladies</label>
+                        <input class="form-check-input" type="checkbox" name="stayType" value="Ladies">
+                        <label class="form-check-label">Ladies</label>
                       </div>
+
+                      <small id="stayTypeError" class="text-danger d-none">Please select at least one option</small>
                     </div>
 
+                    <!-- Button -->
                     <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-success px-5">Submit</button>
+                      <button type="button" onclick="sendWhatsApp()" class="btn btn-success px-5">Submit</button>
                     </div>
+
                   </div>
                 </form>
               </div>
-
-
               <!-- ======= End Booking Form Section ======= -->
 
 

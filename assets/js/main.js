@@ -207,20 +207,138 @@
 
 // form
 
- document.getElementById("bookingForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent page reload
 
-    const name = document.getElementById("name").value;
-    const checkin = document.getElementById("checkin").value;
-    const checkout = document.getElementById("checkout").value;
-    const rooms = document.getElementById("rooms").value;
-    const people = document.getElementById("people").value;
-    const stayType = document.querySelector('input[name="stayType"]:checked')?.value || "";
+function showError(id) {
+  document.getElementById(id).classList.remove("d-none");
+}
 
-    const message = `*Room Booking Request*\n\n👤 Name: ${name}\n🏨 Stay Type: ${stayType}\n🗓️ Check-in: ${checkin}\n📅 Check-out: ${checkout}\n🚪 Rooms: ${rooms}\n👥 People: ${people}`;
+function hideError(id) {
+  document.getElementById(id).classList.add("d-none");
+}
 
-    const whatsappNumber = "919095535353"; // your WhatsApp number
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+function sendWhatsApp() {
 
-    window.open(url, "_blank"); // opens WhatsApp chat
-  });
+  let valid = true;
+
+  let name = document.getElementById("name").value.trim();
+  let checkin = document.getElementById("checkin").value.trim();
+  let checkout = document.getElementById("checkout").value.trim();
+  let rooms = document.getElementById("rooms").value.trim();
+  let adults = document.getElementById("adults").value.trim();
+  let kids = document.getElementById("kids").value.trim();
+
+  // Validation
+  if (name === "") { showError("nameError"); valid = false; }
+  else { hideError("nameError"); }
+
+  if (checkin === "") { showError("checkinError"); valid = false; }
+  else { hideError("checkinError"); }
+
+  if (checkout === "") { showError("checkoutError"); valid = false; }
+  else { hideError("checkoutError"); }
+
+  if (rooms === "" || rooms == 0) { showError("roomsError"); valid = false; }
+  else { hideError("roomsError"); }
+
+  if (adults === "" || adults == 0) { showError("adultsError"); valid = false; }
+  else { hideError("adultsError"); }
+
+  // Stay type validation
+  let stayTypes = [];
+  document.querySelectorAll('input[name="stayType"]:checked').forEach(el => stayTypes.push(el.value));
+
+  if (stayTypes.length === 0) { showError("stayTypeError"); valid = false; }
+  else { hideError("stayTypeError"); }
+
+  // ⭐ NEW CONDITION: Kids required ONLY if FAMILY is selected
+  if (stayTypes.includes("Family")) {
+    if (kids === "") {
+      showError("kidsError");
+      valid = false;
+    } else {
+      hideError("kidsError");
+    }
+  } else {
+    hideError("kidsError"); // Kids optional for other stay types
+  }
+
+  if (!valid) return;
+
+  // WhatsApp number
+  let number = "919095535353";
+
+  let message =
+    "New Room Booking Request:%0A%0A" +
+    "*Name:* " + name + "%0A" +
+    "*Check-in:* " + checkin + "%0A" +
+    "*Check-out:* " + checkout + "%0A" +
+    "*Rooms:* " + rooms + "%0A" +
+    "*Adults:* " + adults + "%0A" +
+    "*Kids:* " + kids + "%0A" +
+    "*Type of Stay:* " + stayTypes.join(", ") + "%0A";
+
+  let url = "https://wa.me/" + number + "?text=" + message;
+  window.open(url, "_blank");
+}
+
+
+// function showError(id) {
+//   document.getElementById(id).classList.remove("d-none");
+// }
+
+// function hideError(id) {
+//   document.getElementById(id).classList.add("d-none");
+// }
+
+// function sendWhatsApp() {
+
+//   let valid = true;
+
+//   let name = document.getElementById("name").value.trim();
+//   let checkin = document.getElementById("checkin").value.trim();
+//   let checkout = document.getElementById("checkout").value.trim();
+//   let rooms = document.getElementById("rooms").value.trim();
+//   let adults = document.getElementById("adults").value.trim();
+//   let kids = document.getElementById("kids").value.trim();
+
+//   // Validation
+//   if (name === "") { showError("nameError"); valid = false; } 
+//   else { hideError("nameError"); }
+
+//   if (checkin === "") { showError("checkinError"); valid = false; } 
+//   else { hideError("checkinError"); }
+
+//   if (checkout === "") { showError("checkoutError"); valid = false; } 
+//   else { hideError("checkoutError"); }
+
+//   if (rooms === "" || rooms == 0) { showError("roomsError"); valid = false; } 
+//   else { hideError("roomsError"); }
+
+//   if (adults === "" || adults == 0) { showError("adultsError"); valid = false; } 
+//   else { hideError("adultsError"); }
+
+//   // Validate stay type
+//   let stayTypes = [];
+//   document.querySelectorAll('input[name="stayType"]:checked').forEach(el => stayTypes.push(el.value));
+
+//   if (stayTypes.length === 0) { showError("stayTypeError"); valid = false; }
+//   else { hideError("stayTypeError"); }
+
+//   if (!valid) return; // STOP if any field is empty
+
+//   // WhatsApp number
+//   let number = "919095535353";
+
+//   let message =
+//     "New Room Booking Request:%0A%0A" +
+//     "*Name:* " + name + "%0A" +
+//     "*Check-in:* " + checkin + "%0A" +
+//     "*Check-out:* " + checkout + "%0A" +
+//     "*Rooms:* " + rooms + "%0A" +
+//     "*Adults:* " + adults + "%0A" +
+//     "*Kids:* " + kids + "%0A" +
+//     "*Type of Stay:* " + stayTypes.join(", ") + "%0A";
+
+//   let url = "https://wa.me/" + number + "?text=" + message;
+//   window.open(url, "_blank");
+// }
